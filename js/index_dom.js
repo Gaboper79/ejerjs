@@ -13,6 +13,7 @@ import getGeoloc from "./geolocalizacion.js";
 import searchFilter from "./busqueda_filtro.js";
 import sorteo from "./sorteo.js";
 import slider from "./carrusel.js";
+import scrollSpy from "./scroll_espia.js";
 const d = document;
 let t;
 const $reloj = d.getElementById("visor-reloj");
@@ -51,6 +52,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   searchFilter(".cards-filter", ".card");
   sorteo("#sorteoBtn", ".participantes");
   slider();
+  scrollSpy();
 });
 
 d.addEventListener("keydown", (e) => {

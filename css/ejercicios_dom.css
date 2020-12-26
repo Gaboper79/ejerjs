@@ -340,6 +340,77 @@ img {
   }
 }
 
-.section {
-  border: thin solid #b71c1c;
+/* formulario de contacto*/
+
+.contact-form {
+  background-color: #224769;
+  box-shadow: 4px 4px 10px dimgray;
+  --form-ok-color: rgb(23, 161, 23);
+  --form-error-color: rgb(194, 15, 15);
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+.contact-form > * {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 95%;
+}
+.contact-form textarea {
+  resize: none;
+}
+.contact-form-response,
+.contact-form legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: wheat;
+}
+.contact-form textarea,
+.contact-form input {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+.contact-form input[type="submit"] {
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: navajowhite;
+  border-radius: 1rem;
+}
+
+.contact-form [required]:valid {
+  border: 2px solid var(--form-ok-color);
+}
+.contact-form [required]:invalid {
+  border: 2px solid var(--form-error-color);
+}
+
+.contact-form-error {
+  margin-top: -1rem;
+  font-size: 80%;
+  background-color: maroon;
+  color: #fff;
+  transition: all 800ms ease;
+}
+.contact-form-error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+.none {
+  display: none;
+}
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }

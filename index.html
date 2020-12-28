@@ -36,7 +36,7 @@
         <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
         <a href="#seccion13" data-scroll-spy>Video Inteligente</a>
         <a href="#seccion14" data-scroll-spy>Formulario de Contacto</a>
-        <a href="#seccion15" data-scroll-spy>Seccion 15</a>
+        <a href="#seccion15" data-scroll-spy>Narrador</a>
       </nav>
     </aside>
     <main>
@@ -169,7 +169,7 @@
       </section>
       <section id="seccion14" class="section" data-scroll-spy>
         <h2>Formulario de Contacto</h2>
-        <form class="contact-form">
+        <form class="contact-form" method="POST">
           <legend>Envianos tus comentarios</legend>
           <br />
           <input
@@ -207,7 +207,7 @@
           <input type="submit" value="Enviar" />
           <div class="contact-form-loader none">
             <p>Enviando el formulario</p>
-            <img src="assets/tail-spin.svg" alt="Cargando" />
+            <img src="./assets/tail-spin.svg" alt="Cargando" />
           </div>
           <div class="contact-form-response none">
             <p>Los datos han sido enviados correctamente</p>
@@ -216,7 +216,19 @@
         </form>
       </section>
       <section id="seccion15" class="section" data-scroll-spy>
-        <h2>Seccion 15</h2>
+        <h2>Narrador</h2>
+        <select id="speech-select">
+          <option value="">---Elige una voz---</option>
+        </select>
+        <br /><br />
+        <textarea
+          id="speech-text"
+          cols="50"
+          rows="5"
+          placeholder="Ingresa un texto para leerlo..."
+        ></textarea>
+        <br /><br />
+        <button id="speech-btn">Leer texto</button>
       </section>
     </main>
     <button class="scroll-top-btn hidden">&#11014;</button>

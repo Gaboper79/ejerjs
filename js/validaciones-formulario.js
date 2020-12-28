@@ -40,6 +40,7 @@ export default function contactFormValidations() {
       $loader.classList.add("none");
       $response.classList.remove("none");
       document.querySelector(".contact-form").reset();
+      document.querySelector(".contact-form").reset();
       setTimeout(() => {
         $response.classList.add("none");
       }, 5000);

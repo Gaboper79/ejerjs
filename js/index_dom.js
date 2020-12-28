@@ -16,6 +16,7 @@ import slider from "./carrusel.js";
 import scrollSpy from "./scroll_espia.js";
 import smartVideo from "./video_inteligente.js";
 import contactFormValidations from "./validaciones-formulario.js";
+import speechReader from "./narrador.js";
 const d = document;
 let t;
 const $reloj = d.getElementById("visor-reloj");
@@ -66,3 +67,4 @@ d.addEventListener("keydown", (e) => {
 
 darktheme(".dark-theme-btn", "dark-mode");
 networkStatus();
+speechReader();
